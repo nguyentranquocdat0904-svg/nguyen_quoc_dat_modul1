@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trang CV Cá Nhân</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <hr>
+      <h1 class="title">Trang CV Cá Nhân</h1>
+      <hr>
+      <hr>
+      <h3>Học Sinh Chăm Chỉ Nhất Của Năm - Mục Tiêu Thành Thạo HTML</h3>
+      <hr>
+      <hr>
+      <h2 class="title"> Thông Tin Cá Nhân</h2>
+      <ul>
+         <img src="https://png.pngtree.com/recommend-works/png-clipart/20240828/ourmid/pngtree-asian-cute-chibi-school-boy-png-image_13636461.png" 
+        alt="D" width="158" height="128">
+        <h3>Họ và Tên: Nguyễn Trần Quốc Đạt</h3>
+          
+       <h3>Địa chỉ: TP Đà Nẵng</h3>
+      </ul>
+      <ul>
+       <h3>Email: SĐT:</h3>
+        <li><h4>ngtrqd@gmail.com</h4></li>
+        <li>0900000000</li>
+      </ul>
+      <hr>
+      <hr>
+    <h2 class="title">Học Lực</h2>
+      <ul>
+       <h3> Học Vấn:</h3>
+          <li>THPT: 10/12</li>
+          <li>Xếp Loại: Tốt</li>
+       </ul> 
+       <ul>
+        <h3>Bằng Cấp</h3>
+        <li>HTML & CSS: Cơ Bản</li>
+        <li> Tin học Văn PHòng: Trung Cấp</li>
+        </ul>  
+      </ul>
+      <hr>
+      <hr>
+      <h2 class="title">Năng Lực</h2>
+      <ul>
+        <h3>Kỹ Năng: Sử Dụng HTML cơ bản</h3>
+        <h3>KInh Nghiệm: Chưa Có</h3>
+        <h3> Định hướng phát triển của bản thân:</h3>
+        <li> Học và Thành Thạo HTML<br> Phát triển tốt bản thân</li>
+      </ul>
+  </body>
+</html>
