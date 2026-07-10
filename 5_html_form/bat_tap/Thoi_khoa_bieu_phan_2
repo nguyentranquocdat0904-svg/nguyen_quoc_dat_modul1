@@ -21,7 +21,7 @@
     </style>
   </head>
   <body>
-    <h1 style="color: blue;">Thời Khoá Biểu</h1>
+    <h1 style=" text-align: center; color: blue;"  >Thời Khoá Biểu</h1>
 <div style="display: flex; justify-content: space-between; width: 88%;">
     <p style="color: blue;"> Lớp: T0908I</p>
     <p style="color: blue;"> Thời Gian: 13h30- 17h30</p>
