@@ -4,8 +4,13 @@
     <title>Tạo form lấy survey khách hàng</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
-      td {
+          table {
+        border: 1px solid black;
+        border-collapse: collapse;
          text-align: center;
+      }
+      td,th {
+         border: 1px solid black;
       }
     </style>
   </head>
@@ -86,6 +91,7 @@
         <td><input type="radio" name="b" value="4"><br>4</td> 
        </tr>
        <tr>
+
         <th><input type="submit" value="Submit"></th>
         <td></td>
         <td></td>
