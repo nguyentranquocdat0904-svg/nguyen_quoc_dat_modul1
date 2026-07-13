@@ -7,13 +7,13 @@
   <body>
       <h4>Họ và Tên</h4> 
       <br>
-      <td><input type="text" </td> 
+      <td><input type="text" ></td> 
       <h4>Email</h4>
       <br>
        <td><input type="email" ></td>
       <h4>Số điện thoại</h4>
       <br>
-       <td></td><input type="text"</td>
+       <td></td><input type="text" ></td>
       <h4>Giới tính:</h4>
     <table>
       <tr>
