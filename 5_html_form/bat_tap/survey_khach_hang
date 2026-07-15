@@ -12,6 +12,12 @@
       td,th {
          border: 1px solid black;
       }
+      .silver {
+        background-color: silver;
+      }
+      .gray {
+        background-color: gray;
+      }
     </style>
   </head>
   <body>
@@ -63,35 +69,34 @@
 <p> Please rate your level of agreenment wwith the following statement.</p>
 <table>
   <tr>
-    <td></td>
-    <th>Strongly Disagree</th>
-    <th>Disagree</th>
-    <th>Agree</th>
-    <th>Strongly Agree</th>
+    <td class="gray" ></td>
+    <th class="gray" >Strongly Disagree</th>
+    <th class="gray" >Disagree</th>
+    <th class="gray" >Agree</th>
+    <th class="gray" >Strongly Agree</th>
   </tr>
   <tr>
         <th> Our products are priced fairly </th>
-        <td><input type="radio" name="b" value="1"><br>1</td>
-        <td><input type="radio" name="b" value="2"><br>2</td>
-        <td><input type="radio" name="b" value="3"><br>3</td>
-        <td><input type="radio" name="b" value="4"><br>4</td> 
+        <td><input type="radio" name="1" value="1"><br>1</td>
+        <td><input type="radio" name="2" value="2"><br>2</td>
+        <td><input type="radio" name="3" value="3"><br>3</td>
+        <td><input type="radio" name="4" value="4"><br>4</td> 
        </tr>
        <tr>
-        <th>Our products are high quality</th>
-        <td><input type="radio" name="b" value="1"><br>1</td>
-        <td><input type="radio" name="b" value="2"><br>2</td>
-        <td><input type="radio" name="b" value="3"><br>3</td>
-        <td><input type="radio" name="b" value="4"><br>4</td> 
+        <th class="silver" >Our products are high quality</th>
+        <td class="silver" ><input type="radio" name="1" value="1"><br>1</td>
+        <td class="silver" ><input type="radio" name="2" value="2"><br>2</td>
+        <td class="silver" ><input type="radio" name="3" value="3"><br>3</td>
+        <td class="silver" ><input type="radio" name="4" value="4"><br>4</td> 
        </tr>
        <tr>
         <th> You would recommend our product to a friend or coworker</th>
-        <td><input type="radio" name="b" value="1"><br>1</td>
-        <td><input type="radio" name="b" value="2"><br>2</td>
-        <td><input type="radio" name="b" value="3"><br>3</td>
-        <td><input type="radio" name="b" value="4"><br>4</td> 
+        <td><input type="radio" name="1" value="1"><br>1</td>
+        <td><input type="radio" name="2" value="2"><br>2</td>
+        <td><input type="radio" name="3" value="3"><br>3</td>
+        <td><input type="radio" name="4" value="4"><br>4</td> 
        </tr>
        <tr>
-
         <th><input type="submit" value="Submit"></th>
         <td></td>
         <td></td>
