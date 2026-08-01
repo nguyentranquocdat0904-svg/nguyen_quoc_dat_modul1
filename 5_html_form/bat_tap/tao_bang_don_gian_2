@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thời Khoá Biểu 2</title>
+    <link rel="stylesheet" href="styles.css" />
+     <style>
+      table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      td {
+         border: 1px solid black;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      .orange {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style=" text-align: center; color: blue;"  >Thời Khoá Biểu</h1>
+<div style="display: flex; justify-content: space-between; width: 88%;">
+    <p style="color: blue;"> Lớp: T0908I</p>
+    <p style="color: blue;"> Thời Gian: 13h30- 17h30</p>
+</div>
+<div style="display: flex; justify-content: space-between; width: 88%;">
+    <p style="color: blue;"> Giáo Viên: Khoa NV</p>
+    <p style="color: blue;"> Ngày Học: Thứ 3,5,7</p>
+</div>
+<p style="color: blue"> Phòng Học: Class3/Lap3</p>
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <td class="yellow"><strong>Thứ 3</strong></td>
+    <td class="yellow"><strong>Thứ 5</strong></td>
+    <td class="yellow"><strong>Thứ 7</strong></td>
+  </tr>
+    <td class="orange"><strong>Tuần</strong></td>
+    <td class="orange""><strong>Ngày Bắt Đầu</strong></td>
+    <td class="orange""><strong>Ngày Kiết Thúc</strong></td>
+    <th class="orange"></th></th>
+    <th class="orange"><strong>Môn Học</strong></th>
+    <th class="orange"></th></th>
+  </tr>
+  <tr>
+    <td>01</td>
+    <td>01/09/2009</td>
+    <td>05/09/2008</td>
+    <td> CF-T1,L1</td>
+    <td> CF-T2,L2</td>
+    <td> CF-T3,L3</td>
+  </tr>
+  <tr>
+    <td>02</td>
+    <td>08/09/2009</td>
+    <td>12/09/2009</td>
+    <td> CF-T4,L4</td>
+    <td> CF-Written Test</td>
+    <td> C1-T1,L1</td>
+  </tr>
+  <tr>
+    <td>03</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+  </tr>
+</table>
+</body>
+</html>
