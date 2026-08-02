@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tính chu vi hình tròn</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <script>
+      var r = 9 
+      var pi = 3.14
+      var chuvihinhtron = 2*r*pi
+      document.write ( chuvihinhtron );  
+    </script>
+  </body>
+</html>
