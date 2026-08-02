@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>điểm trung bình 3 môn toán lý hoá sinh</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <script>
+      var vatly = 5  
+      var hoa = 9
+      var sinh = 10
+      var tong = vatly + hoa + sinh;
+      var trungbinh = tong/3;
+      document.write ( trungbinh );  
+    </script>
+  </body>
+</html>
