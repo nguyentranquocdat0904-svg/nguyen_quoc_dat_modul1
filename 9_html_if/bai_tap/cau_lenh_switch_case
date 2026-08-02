@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Câu lệnh switch-case</title>
+</head>
+<body>
+    <h3> Tháng:</h3>
+    <input type="number" id="thang" >
+    <button onclick="ngay()"> Số ngày</button>
+    <h4 id="result"></h4> 
+    <script>
+      function ngay() {
+    let month = document.getElementById("thang").value;
+    let result = document.getElementById("result");
+    let thang = Number(month);
+    let ngay;
+    switch (thang) {
+        case 1:
+        case 3:
+        case 5: 
+        case 7:
+        case 8: 
+        case 10: 
+        case 12:
+        ngay = 31;
+        break;
+        case 4: 
+        case 6:
+        case 9:
+        case 11:
+         ngay = 30;
+          break;
+        case 2:
+            ngay = "28 hoặc 29 ";
+            break;
+    }
+    result.innerText = "Tháng " + thang + " có " + ngay + " ngày";
+}    
+   </script> 
+</body>
+</html>
