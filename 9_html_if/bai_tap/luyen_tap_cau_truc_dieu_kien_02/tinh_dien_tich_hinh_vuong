@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+  <title>Tính diện tích hình vuông</title>
+</head>
+<body>
+  <h2>Tính Diện Tích Hình Vuông</h2>
+  <p > cạnh a:</p>
+  <input type="number" id="canh1">
+  <button onclick="tinhDienTich()">Tính diện tích</button>
+  <h3 id="result"></h3>
+  <script>
+    function tinhDienTich() {
+      let canha = document.getElementById("canh1").value;
+      let ketqua = document.getElementById("result");
+      let a = Number(canha);
+      if (a >= 0) {
+        const s = a * a;
+        ketqua.innerText = "Diện tích hình vuông cạnh " + a + " là: " + s;
+      } else {
+        ketqua.innerText = " cạnh a phải lớn hơn hoặc bằng 0";
+      }
+    }
+  </script>
+</body>
+</html>
