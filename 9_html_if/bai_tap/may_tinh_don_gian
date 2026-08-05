@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>máy tính đơn giản</title>
+    <style>
+        body{
+            font-family: Arial;
+        }
+
+        .a{
+            width:350px;
+            border:5px solid black;
+            padding:15px;
+        }
+
+        input{
+            width:95%;
+            height:50px;
+            font-size:30px;
+            text-align:right;
+            margin-bottom:20px;
+        }
+
+        button{
+            width:70px;
+            height:50px;
+            margin:5px;
+            font-size:25px;
+            color:blue;
+            background:white;
+            border:2px solid #ddd;
+        }
+
+        button:hover{
+            background:#eee;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="a">
+      <input type="text" id="number1" value="">
+      <br>
+      <button onclick="number('1')">1</button>
+      <button onclick="number('2')">2</button>
+      <button onclick="number('3')">3</button>
+      <button onclick="maytinh('+')">+</button>
+      <br>
+      <button onclick="number('4')">4</button>
+      <button onclick="number('5')">5</button>
+      <button onclick="number('6')">6</button>
+      <button onclick="maytinh('-')">-</button>
+      <br>
+      <button onclick="number('7')">7</button>
+      <button onclick="number('8')">8</button>
+      <button onclick="number('9')">9</button>
+      <button onclick="maytinh('*')">*</button>
+      <br>
+      <button onclick="xoa()">C</button>
+      <button onclick="number('0')">0</button>
+      <button onclick="ketqua('=')">=</button>
+      <button onclick="maytinh('/')">/</button>
+    </div>
+  </body>
+  <script>
+    let dau = "";
+    let numberone = "";
+    let numbertwo = "";
+    function number(so){
+      if(dau == ""){
+        numberone += so ;
+      }else{
+        numbertwo += so ;
+      
+      }
+      document.getElementById("number1").value += so ;
+    }
+    function maytinh(dau1){
+      dau = dau1
+      document.getElementById("number1").value = "" ;
+    }
+    function ketqua(){
+      let a = Number(numberone);
+      let b = Number(numbertwo);
+      let kq = "";
+      if(dau =="+"){
+        kq = a + b ;
+      }else if (dau == "-"){
+        kq = a - b;
+      }else if(dau == "*"){
+        kq = a * b;
+      }else if (dau == "/"){
+        if(b == 0 ){
+          kq = "Phép tính lỗi" ;
+        }else{
+          kq = a / b ;
+        }
+      }
+      document.getElementById("number1").value = kq ;
+      
+      numberone = kq ;
+      numbertwo = "";
+      dau = "";
+    }
+    function xoa(){
+      dau = "";
+      numberone = "";
+      numbertwo = "";
+      document.getElementById("number1").value = "";
+    }
+  </script>
+</html>
