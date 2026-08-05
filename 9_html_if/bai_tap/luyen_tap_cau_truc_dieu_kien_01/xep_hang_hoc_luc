@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>Bài 5 - Xếp hạng học lực</title>
+</head>
+<body>
+
+    <h2>Xếp hạng học lực của học sinh</h2>
+
+    <p>Nhập điểm kiểm tra:</p>
+    <input type="number" id="kiemTra" ><br>
+
+    <p>Nhập điểm thi giữa kỳ:</p>
+    <input type="number" id="giuaKy" ><br>
+
+    <p>Nhập điểm thi cuối kỳ:</p>
+    <input type="number" id="cuoiKy" ><br><br>
+
+    <button onclick="xepHang()"> Xếp loại</button>
+
+    <p id="ketqua"></p>
+
+    <script>
+        function xepHang() {
+            let diemKT = document.getElementById("kiemTra").value;
+            let diemGK = document.getElementById("giuaKy").value;
+            let diemCK = document.getElementById("cuoiKy").value;
+            let KT = Number(diemKT);
+            let GK = Number(diemGK);
+            let CK = Number(diemCK);
+
+            
+            let dtb = (KT + GK * 2 + CK * 3) / 6;
+            let hocLuc = "";
+
+            if (dtb >= 8.0) {
+                hocLuc = "Giỏi";
+            } else if (dtb >= 6.5) {
+                hocLuc = "Khá";
+            } else if (dtb >= 5.0) {
+                hocLuc = "Trung bình";
+            } else {
+                hocLuc = "Yếu";
+            }
+
+            document.getElementById("ketqua").innerText = "Điểm trung bình: " + dtb.toFixed(2) + " - Học lực: " + hocLuc;
+                
+        }
+    </script>
+
+</body>
+</html>
