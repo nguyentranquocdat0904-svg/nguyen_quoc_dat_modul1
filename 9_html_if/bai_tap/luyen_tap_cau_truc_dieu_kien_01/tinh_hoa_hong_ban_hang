@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <title> Tính hoa hồng bán hàng</title>
+</head>
+<body>
+
+    <h2>Tính hoa hồng theo doanh số bán hàng</h2>
+
+    <p>Nhập tổng doanh số bán hàng :</p>
+    <input type="number" id="doanhSo" ><br><br>
+
+    <button onclick="HoaHong()">Tính hoa hồng</button>
+
+    <p id="ketqua"></p>
+
+    <script>
+        function HoaHong() {
+            let DS = document.getElementById("doanhSo").value;
+
+
+            let doanhSo = Number(DS);
+            let hoaHong = 0;
+            let phanTram = 0;
+
+            if (doanhSo > 300) {
+                phanTram = 10;
+            } else if (doanhSo > 100) {
+                phanTram = 5;
+            } else {
+                phanTram = 2;
+            }
+
+            hoaHong = (doanhSo * phanTram) / 100;
+
+            document.getElementById("ketqua").innerText = 
+                "Mức hoa hồng (" + phanTram + "%): " + hoaHong.toLocaleString("vi-VN") + "triệu";
+        }
+    </script>
+
+</body>
+</html>
