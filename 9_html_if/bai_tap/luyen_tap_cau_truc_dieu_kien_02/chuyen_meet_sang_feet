@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chuyển mét sang feet</title>
+</head>
+<body>
+  <h2>Chuyển đổi Mét sang Feet</h2>
+
+  <label for="met">Nhập số mét :</label>
+  <input type="number" id="met">
+  <button onclick="convert()">Chuyển đổi</button>
+
+  <h3 id="result"></h3>
+
+  <script>
+    function convert() {
+      let somet = document.getElementById("met").value;
+      let ketqua = document.getElementById("result");
+
+      if (somet === "") {
+        ketqua.innerText = "";
+        return;
+      }
+
+      const m = Number(somet);
+      if (m >= 0) {
+        const ft = m * 3.2808;
+        ketqua.innerText = m + "m bằng " + ft + " feet";
+      } else {
+        ketqua.innerText = "Số mét lớn hơn hoặc bằng 0!";
+      }
+    }
+  </script>
+</body>
+</html>
