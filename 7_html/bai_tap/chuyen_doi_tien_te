@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>chuyển đổi tiền tệ</title>
+  </head>
+  <body>
+     <h2>Currency Converter</h2>
+     <p>Amount</p><input type="number" id="amount">
+     <p>from : </p>
+     <select id="from">
+      <option value ="1">Viet Nam</option>
+      <option value ="25000">USD </option>
+     </select>
+     <p>To:</p>
+     <select id="to">
+      <option value ="1">Viet Nam</option>
+      <option value ="25000">USD </option>
+     </select>
+     <button onclick="converter()">Converter</button>
+     <h4 id="result"></h4>
+  </body>
+  <script>
+    function converter(){
+      let amount1 = Number(document.getElementById("amount").value);
+      let from1 = Number(document.getElementById("from").value);
+      let to1 = Number(document.getElementById("to").value);
+      let result1 = amount1 * from1 / to1;
+      document.getElementById("result").innerHTML = "Result :" + result1
+
+
+    }
+  </script>
+</html>
