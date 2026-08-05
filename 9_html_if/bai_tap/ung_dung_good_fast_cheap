@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Ứng dụng Good - Fast - Cheap</title>
+</head>
+<body>
+    <input type="checkbox" id="good" onclick="selectOption('good')">  
+     <span>GOOD</span>
+     <br>
+    <input type="checkbox" id="cheap" onclick="selectOption('cheap')">
+    <span>CHEAP</span> 
+    <br>
+     <input type="checkbox" id="fast" onclick="selectOption('fast')">
+    <span>FAST</span>
+    <script>
+        function selectOption(clicked) {
+            let good = document.getElementById('good');
+            let cheap = document.getElementById('cheap');
+            let fast = document.getElementById('fast');
+            if (good.checked && cheap.checked && fast.checked) {
+                if (clicked === 'good') {
+                    fast= false;
+                } else if (clicked === 'cheap') {
+                    good.checked = false;
+                } else if (clicked === 'fast') {
+                    cheap.checked = false;
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
