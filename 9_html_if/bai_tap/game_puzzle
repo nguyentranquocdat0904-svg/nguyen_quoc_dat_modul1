@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>game puzzle</title>
+<style>
+img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    margin:15px 0;
+    border-radius:18px;
+    cursor:pointer;
+    border:5px solid white;
+    transition:.4s;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+img:hover{
+    transform:scale(1.05);
+    border-color:#00E5FF;
+    box-shadow:0 0 30px #00E5FF;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <img onclick="change1()" id="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUj3alh_TGThjkOwOBwcehHrc8gP50XZYiEgNOVAszosBYI--oYjDU0Br0&s=10">
+    <img onclick="change2()" id="img2" src="https://cdn2.tuoitre.vn/tto/i/s626/2017/08/09/bugatti-chiron-2017-1502272212.jpg">
+    <img onclick="change3()" id="img3" src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2019/6/10/738354/595097.jpg">
+   <div id="win"></div>
+    </div>
+  </body>
+ <script>
+  function change1() {
+    let img = document.getElementById("img1");
+    if (img.src.includes("encrypted-tbn0.gstatic.com")) {
+      img.src = "https://cdn2.tuoitre.vn/tto/i/s626/2017/08/09/bugatti-chiron-2017-1502272212.jpg";
+    } else if (img.src.includes("tuoitre.vn")) {
+      img.src = "https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2019/6/10/738354/595097.jpg";
+    } else {
+      img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUj3alh_TGThjkOwOBwcehHrc8gP50XZYiEgNOVAszosBYI--oYjDU0Br0&s=10";
+    }
+    check(); 
+  }
+
+  function change2() {
+    let img = document.getElementById("img2");
+    if (img.src.includes("encrypted-tbn0.gstatic.com")) {
+      img.src = "https://cdn2.tuoitre.vn/tto/i/s626/2017/08/09/bugatti-chiron-2017-1502272212.jpg";
+    } else if (img.src.includes("tuoitre.vn")) {
+      img.src = "https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2019/6/10/738354/595097.jpg";
+    } else {
+      img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUj3alh_TGThjkOwOBwcehHrc8gP50XZYiEgNOVAszosBYI--oYjDU0Br0&s=10";
+    }
+    check(); 
+  }
+
+  function change3() {
+    let img = document.getElementById("img3");
+    if (img.src.includes("encrypted-tbn0.gstatic.com")) {
+      img.src = "https://cdn2.tuoitre.vn/tto/i/s626/2017/08/09/bugatti-chiron-2017-1502272212.jpg";
+    } else if (img.src.includes("tuoitre.vn")) {
+      img.src = "https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2019/6/10/738354/595097.jpg";
+    } else {
+      img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUj3alh_TGThjkOwOBwcehHrc8gP50XZYiEgNOVAszosBYI--oYjDU0Br0&s=10";
+    }
+    check();
+  }
+
+  function check() {
+    let img1 = document.getElementById("img1").src;
+    let img2 = document.getElementById("img2").src;
+    let img3 = document.getElementById("img3").src;
+    let win = document.getElementById("win");
+
+
+    if (img1 === img2 && img2 === img3) {
+      win.innerHTML = "<h2>Chúc mừng! Bạn đã chiến thắng!</h2>";
+    } else {
+      win.innerHTML = ""; 
+    }
+  }
+</script>
+</html>
