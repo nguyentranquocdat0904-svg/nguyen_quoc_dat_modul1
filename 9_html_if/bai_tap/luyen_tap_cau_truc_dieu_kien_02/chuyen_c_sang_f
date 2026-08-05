@@ -3,27 +3,15 @@
     <title> Chuyển C sang F</title>
 </head>
 <body>
-
-
     <p>Nhập nhiệt độ (°C):</p>
     <input type="number" id="C"><br><br>
-
     <button onclick="Doi()">Chuyển đổi</button>
-
     <p id="ketqua"></p>
-
     <script>
         function Doi() {
             let C = document.getElementById("C").value;
-
-            if (C === "") {
-                document.getElementById("ketqua").innerText = "Vui lòng nhập độ C!";
-                return;
-            }
-
             let c = Number(C);
             let f = c * 9 / 5 + 32;
-
             document.getElementById("ketqua").innerText = c + "°C = " + f.toFixed(2) + "°F";
         }
     </script>
