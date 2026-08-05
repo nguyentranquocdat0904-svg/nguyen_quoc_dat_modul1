@@ -75,7 +75,7 @@ img:hover{
 
 
     if (img1 === img2 && img2 === img3) {
-      win.innerHTML = "<h2>Chúc mừng! Bạn đã chiến thắng!</h2>";
+      win.innerHTML = "<h2>Chúc mừng</h2>";
     } else {
       win.innerHTML = ""; 
     }
