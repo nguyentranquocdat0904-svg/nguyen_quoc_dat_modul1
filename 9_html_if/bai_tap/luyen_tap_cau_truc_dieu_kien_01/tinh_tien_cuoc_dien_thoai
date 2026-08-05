@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title> Tính cước điện thoại</title>
+</head>
+<body>
+
+    <h2>Tính cước điện thoại hộ gia đình</h2>
+
+    <p>Nhập tổng số phút gọi trong tháng:</p>
+    <input type="number" id="phut" ><br><br>
+
+    <button onclick="Cuoc()">Tính cước</button>
+
+    <p id="ketqua"></p>
+
+    <script>
+        function Cuoc() {
+            let sophut = document.getElementById("phut").value;
+            let phut = Number(sophut);
+            let phiCoDinh = 25000; 
+            let tongTien = 0;
+
+            
+            if (phut > 200) {
+                tongTien = (phut - 200) * 200 + 150 * 400 + 50 * 600;
+            } else if (phut > 50) {
+                tongTien = (phut - 50) * 400 + 50 * 600;
+            } else {
+                tongTien = phut * 600;
+            }
+            tongTien += phiCoDinh;
+            document.getElementById("ketqua").innerText = 
+                "Tổng cước điện thoại phải trả: " + tongTien.toLocaleString("vi-VN") + " VNĐ";
+        }
+    </script>
+
+</body>
+</html>
