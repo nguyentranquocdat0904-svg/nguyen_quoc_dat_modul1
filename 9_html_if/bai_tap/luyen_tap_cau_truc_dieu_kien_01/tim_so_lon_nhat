@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Bài 4 - Tìm số lớn nhất trong 3 số</title>
+</head>
+<body>
+
+    <h2>Tìm giá trị lớn nhất của 3 số nguyên</h2>
+
+    <p>Nhập số thứ nhất (a):</p>
+    <input type="number" id="A"><br>
+
+    <p>Nhập số thứ hai (b):</p>
+    <input type="number" id="B"><br>
+
+    <p>Nhập số thứ ba (c):</p>
+    <input type="number" id="C"><br><br>
+
+    <button onclick="Max()">Tìm số lớn nhất</button>
+
+    <p id="ketqua"></p>
+
+    <script>
+        function Max() {
+            let A = document.getElementById("A").value;
+            let B = document.getElementById("B").value;
+            let C = document.getElementById("C").value;
+
+            let a = Number(A);
+            let b = Number(B);
+            let c = Number(C);
+
+           
+            let max = Math.max(a, b, c);
+          
+
+
+            document.getElementById("ketqua").innerText = "Số lớn nhất là: " + max;
+        }
+    </script>
+
+</body>
+</html>
