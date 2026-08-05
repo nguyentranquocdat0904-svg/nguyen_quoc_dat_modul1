@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>Bài 1 - Kiểm tra chia hết</title>
+</head>
+<body>
+    <h2>Kiểm tra a chia hết cho b</h2>
+    <h2 >Nhập số a:</h2>
+    <input type="number" id="A"><br><br>
+    <h2>Nhập số b:</h2>
+    <input type="number" id="B" ><br><br>
+    <button onclick="kiemTra()">Kiểm tra</button>
+    <p id="ketQua"></p>
+    <script>
+        function kiemTra() {
+           let a = Number(document.getElementById("A").value);
+            let b = Number(document.getElementById("B").value);
+            let ketQua = document.getElementById("ketQua");
+
+            if (b === 0) {
+                    alert("Số b khác 0");
+                } else if (a % b === 0) {
+                    alert(a + " chia hết cho " + b);
+                } else {
+                    alert(a + " không chia hết cho " + b);
+                }
+            }
+    </script>
+</body>
+</html>
