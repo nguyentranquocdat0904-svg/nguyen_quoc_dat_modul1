@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kiểm tra tuổi vào lớp 10</title>
+  </head>
+  <body>
+    <h2>Kiểm tra điều kiện vào lớp 10</h2>
+    
+    <h2 >Nhập tuổi học sinh: </h2>
+    <input type="number" id="tuoi" >
+    <button onclick="kiemTraTuoi()">Kiểm tra</button>
+
+    <p id="ketQua"></p>
+
+    <script>
+      function kiemTraTuoi() {
+       let tuoi = document.getElementById("tuoi").value;
+       let ketQua = document.getElementById("ketQua");
+    tuoi = parseInt(tuoi);
+
+    if (tuoi >=15) {
+        ketQua = " đủ điều kiện vào lớp 10";
+    } else {
+        ketQua = " không đủ điều kiện vào lớp 10";
+    }
+    document.getElementById("ketQua").innerHTML = ketQua
+}
+    </script>
+  </body>
+</html>
