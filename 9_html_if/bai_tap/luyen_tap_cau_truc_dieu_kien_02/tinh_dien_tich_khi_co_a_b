@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bài 4: Tính diện tích hình chữ nhật</title>
+  </head>
+  <body>
+    <h2>Tính diện tích hình chữ nhật</h2>
+    <h2>cạnh A:</h2>
+    <input type="number" id="A" ><br ><br >
+    <h2>cạnh B:</h2>
+    <input type="number" id="B" ><br ><br >
+    <button onclick="tinh()">Tính diện tích</button>
+    <h3 id="ketQua"></h3>
+    <script>
+      function tinh() {
+        let a = Number(document.getElementById("A").value);
+        let b = Number(document.getElementById("B").value);
+        let ketQua = document.getElementById("ketQua");
+
+        if (a <= 0 || b <= 0) {
+          if (a <= 0 && b <= 0) {
+            ketQua.innerText = "Cả cạnh a và b phải lớn hơn 0!";
+          } else if (a <= 0) {
+            ketQua.innerText = "Cạnh a phải lớn hơn 0!";
+          } else {
+            ketQua.innerText = "Cạnh b phải lớn hơn 0!";
+          }
+        } else {
+          let dienTich = a * b;
+          let kq = 1;
+
+          switch (kq) {
+            case 1:
+              ketQua.innerText = "Diện tích hình chữ nhật là: " + dienTich;
+              break;
+            default:
+              ketQua.innerText = "Lỗi không xác định!";
+              break;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
